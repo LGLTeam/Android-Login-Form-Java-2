@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
     Button loginBtn;
     ProgressBar progressBar;
 
-    public native void LoginCheck();
+    public native void Check();
 
     //Login async task
     public class UserLoginTask extends AsyncTask<Void, Void, String> {
@@ -97,7 +97,7 @@ public class MainActivity extends Activity {
                         return;
                     }
 
-                    LoginCheck();
+                    //Check();
 
                     finish();
                     return;
@@ -331,7 +331,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        loadLibrary("MyLib");
+        //loadLibrary("MyLib");
         SetupForm();
     }
 }

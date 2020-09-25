@@ -8,7 +8,7 @@ bool loggedin = false;
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_example_loginform2_MainActivity_LoginCheck(JNIEnv *env, jobject thiz) {
+Java_com_example_loginform2_MainActivity_Check(JNIEnv *env, jobject thiz) {
     loggedin = true;
 }
 

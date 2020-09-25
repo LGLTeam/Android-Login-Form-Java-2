@@ -73,3 +73,11 @@ Now compile the game APK
 It should launch the login screen and successfully launch the activity after login :)
 
 ![](https://i.imgur.com/eyx8ldU.gif)
+
+# Simple protection in lib
+
+See `Main.cpp` for example how to check if the user has logged in
+
+There are the codes called `Check()` and `loadLibrary`. They are commented out
+
+You may need to protect your dex and lib files for that
