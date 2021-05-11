@@ -1,5 +1,5 @@
 # Android Login Form in Java
-Yet another login form only written in Java that we made last year 2019
+Yet another login form only written in Java that we made last year 2019. No need okhttp dependency
 
 This project is for experienced modders and programmers only and must be able to search on Google for help. We will not explain here
 
@@ -9,11 +9,19 @@ Keep in mind that it is mainly for APK modding and not for general app developme
 
 # PHP
 
-Add `login.php` to your server that supports PHP. Repo based hosting such as Github does not support PHP
+Add `login.php` to your server that supports PHP, use 000webhost.com for free webserver. Repo based hosting such as Github does not support PHP
 
 Change URL on `public String sUrl` on `MainActivity.java` file
 
+# Merging into your project
+
+It's easy, just copy and paste the code into your project and make some changes
+
+See the example folder how the login code was merged into the mod menu project on `MainActivity.java` file
+
 # How to implement to APK:
+
+**This is quite different to implement because the code depends on Activity, you can't just call static method via game's onCreate like `invoke-static {p0}, Luk/lgl/MainActivity;->Start(Landroid/content/Context;)V` so make sure you follow this steps**
 
 First, know the game's launch activity/main activity
 
